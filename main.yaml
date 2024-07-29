@@ -1,5 +1,5 @@
 ---
-- name: Configure boilerplate instance
+- name: Setup and deploy PHP Laravel application
   hosts: hng
   become: yes
   tasks:
@@ -168,7 +168,7 @@
     - name: Save PostgreSQL admin credentials
       ansible.builtin.copy:
         content: |
-          pgadmin:secure_password
+          pgadmin:mydbpassyword
         dest: /var/secrets/pg_pw.txt
         owner: hng
         group: hng
