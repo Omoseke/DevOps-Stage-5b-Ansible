@@ -1,7 +1,7 @@
 # PHP App Deployment and Config with Ansible 
 
 ## Overview
-This project automates the deployment and configuration of a Laravel PHP boilerplate application using Ansible. The process involves setting up a new Linux server instance, cloning the application repository, installing dependencies, configuring PostgreSQL and messaging queues, setting up application and Nginx, and configuring logging.
+This task automates the deployment and configuration of a Laravel PHP boilerplate application from "https://github.com/hngprojects/hng_boilerplate_php_laravel_web.git" using Ansible. The process involves setting up a new Linux server instance, cloning the application repository, installing dependencies, configuring PostgreSQL and messaging queues, setting up application and Nginx, and configuring logging.
 
 ## Steps
 
@@ -23,7 +23,7 @@ This project automates the deployment and configuration of a Laravel PHP boilerp
 ## Execution
 Run the Ansible playbook using the following command:
 ```bash
-ansible-playbook main.yaml -b
+ansible-playbook -i inventory.cfg main.yaml -b
 ```
 
 ## Inventory Configuration (`inventory.cfg`)
@@ -32,8 +32,8 @@ ansible-playbook main.yaml -b
 your_server_ip_or_hostname
 ```
 
-## Playbook (`main.yaml`)
-Refer to the detailed `main.yaml` script provided above for step-by-step tasks.
+
+
 
 ## Conclusion
 This setup ensures an automated and consistent deployment of the boilerplate application with necessary configurations, making it easier to manage and scale.
