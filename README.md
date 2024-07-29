@@ -1,4 +1,4 @@
-# PHP aApp Automated Deployment and Configuration with Ansible 
+# PHP App Deployment and Config with Ansible 
 
 ## Overview
 This project automates the deployment and configuration of a Laravel PHP boilerplate application using Ansible. The process involves setting up a new Linux server instance, cloning the application repository, installing dependencies, configuring PostgreSQL and messaging queues, setting up application and Nginx, and configuring logging.
